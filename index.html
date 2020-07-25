@@ -1,46 +1,446 @@
 <!DOCTYPE html>
-<html lang="es-ES">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analog Clock</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-</head>
-<body>
-    <div class="clock">
-        <div class="hour">
-            <div class="hr" id="hr"></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Natalio Rabasco | Portfolio</title>
+    <meta
+      name="keywords"
+      content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod."
+    />
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod."
+    />
+
+    <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="content-wrapper">
+      <header class="header header--bg">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#myNavbar"
+              >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">NATALIO RABASCO</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="#" class="sobre">SOBRE</a></li>
+                <li><a href="#" class="habilidades">HABILIDADES</a></li>
+                <li><a href="#" class="servicios">SERVICIOS</a></li>
+                <li><a href="#" class="portfolio">PORTFOLIO</a></li>
+                <li><a href="#" class="contacto">CONTACTO</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header__content text-center">
+            <span class="header__content__block">HOLA</span>
+            <h1 class="header__content__title">SOY NATALIO RABASCO</h1>
+            <ul class="header__content__sub-title">
+              <li>UI&#47;UX DISEÑADOR <span class="padding">&#45;</span></li>
+              <li>WEB DEVELOPER</li>
+            </ul>
+            <a class="header__button" href="#"
+              >¿TIENES UN PROYECTO? CONTACTAME</a
+            >
+          </div>
+          <div class="social-icon pull-right">
+            <ul>
+              <li>
+                <a href="https://twitter.com/NatalioRabasco"
+                  ><i class="flaticon-twitter-logo"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="min">
-            <div class="mn" id="mn"></div>
+      </header>
+
+      <section class="about" id="sobre">
+        <div class="container about__container--narrow">
+          <div class="page-section">
+            <h2 class="page-section__title">SOBRE MI</h2>
+            <img
+              class="page-section__title-style"
+              src="assets/images/title-style.png"
+              alt=""
+            />
+            <div class="row gutters-80">
+              <div class="col-md-4">
+                <div class="about__image">
+                  <img src="assets/images/about-me-image.png" alt="" />
+                </div>
+              </div>
+              <div class="col-md-8 about__content">
+                <p class="about__description">
+                  Soy desarrollador web front-end desde hace 5 años y estudio un
+                  grado medio de Sistemas Microinformáticos y Redes.
+                </p>
+                <div class="row row--margin-top">
+                  <div class="col-md-4">
+                    <p class="about__bio">
+                      <strong>NOMBRE :</strong> Natalio Rabasco N.
+                    </p>
+                    <p class="about__bio"><strong>EDAD :</strong> 18</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p class="about__bio">
+                      <strong>TRABAJO :</strong> UI&#47;UX Diseñador
+                    </p>
+                    <p class="about__bio">
+                      <strong>LOCALIZACIÓN :</strong> Alicante, ESP
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <a class="button button--colorful button--margin" href="#"
+                      >DESCARGAR CV</a
+                    >
+                  </div>
+                  <div class="col-md-4">
+                    <a class="button button--colorful button--margin" href="#"
+                      >CONTÁCTAME</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="sec">
-            <div class="sc" id="sc"></div>
+      </section>
+
+      <section class="skill skill--bg" id="habilidades">
+        <div class="container skill__container--narrow">
+          <div class="page-section">
+            <h2 class="page-section__title page-section__title--white">
+              MIS HABILIDADES
+            </h2>
+            <img
+              class="page-section__title-style"
+              src="assets/images/title-style-white.png"
+              alt=""
+            />
+            <div class="row gutters-60">
+              <div class="col-md-4">
+                <div class="thumbnail text-center">
+                  <img src="assets/images/adobe-photoshop.png" alt="" />
+                  <h4 class="skill__single-part__title">HTML</h4>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 90%; background-color: #7fb7fa;"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail text-center">
+                  <img src="assets/images/adobe-illustrator.png" alt="" />
+                  <h4 class="skill__single-part__title">CSS</h4>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 85%; background-color: #ffac1b;"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail text-center">
+                  <img src="assets/images/adobe-after-effects.png" alt="" />
+                  <h4 class="skill__single-part__title">JS</h4>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 20%; background-color: #c99aff;"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="service" id="servicios">
+        <div class="container">
+          <div class="page-section">
+            <h2 class="page-section__title">MIS SERVICIOS</h2>
+            <img
+              class="page-section__title-style"
+              src="assets/images/title-style.png"
+              alt=""
+            />
+            <p class="page-section__paragraph">
+              Aparte de estudiar, también ofrezco mis servicios por si alguien
+              los necesita. Se hacer de todo un poco.
+            </p>
+            <div class="row gutters-70">
+              <div class="col-md-4">
+                <div class="thumbnail text-center">
+                  <img src="assets/images/logo-design.png" alt="" />
+                  <h4 class="service__single-section__title">DISEÑO DE LOGO</h4>
+                  <p class="service__single-section__paragraph">
+                    Creo logotipos para empresas/marcas de toda clase. Con Adobe
+                    Ilustrator, Adobe Photoshop, Adobe XD entre otras...
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail text-center">
+                  <img src="assets/images/website-design.png" alt="" />
+                  <h4 class="service__single-section__title">DISEÑO WEB</h4>
+                  <p class="service__single-section__paragraph">
+                    Diseño y programo WEBs de toda clase para cualquier
+                    necesidad.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail text-center">
+                  <img src="assets/images/support.png" alt="" />
+                  <h4 class="service__single-section__title">SOPORTE</h4>
+                  <p class="service__single-section__paragraph">
+                    Mantengo el soporte de WEBs, APPs o de servidores.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <div class="page-section">
+            <h2 class="page-section__title">MI PORTFOLIO</h2>
+            <img
+              class="page-section__title-style"
+              src="assets/images/title-style.png"
+              alt=""
+            />
+            <div class="row gutters-40">
+              <div class="col-md-4">
+                <div
+                  class="portfolio__single-section mix category-a category-b category-c"
+                  data-order="1"
+                >
+                  <img
+                    class="portfolio__single-section__image img-responsive"
+                    src="assets/images/portfolio-1.png"
+                    alt=""
+                  />
+                  <div class="portfolio__single-section__overlay">
+                    <div class="overlay-content">
+                      <h4>PRODUCT CARD UI DESIGN</h4>
+                      <p>Diseño UI</p>
+                    </div>
+                    <div class="portfolio__single-section__search-icon">
+                      <a href="https://codepen.io/Natalio-R/pen/PoqaeoG"
+                        ><img src="assets/images/search-icon.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="portfolio__single-section mix category-a category-c"
+                  data-order="2"
+                >
+                  <img
+                    class="portfolio__single-section__image img-responsive"
+                    src="assets/images/portfolio-2.png"
+                    alt=""
+                  />
+                  <div class="portfolio__single-section__overlay">
+                    <div class="overlay-content">
+                      <h4>CSS SKEWED BORDER</h4>
+                      <p>Diseño UI</p>
+                    </div>
+                    <div class="portfolio__single-section__search-icon">
+                      <a href="https://codepen.io/Natalio-R/pen/gEoadK"
+                        ><img src="assets/images/search-icon.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="portfolio__single-section mix category-c"
+                  data-order="3"
+                >
+                  <img
+                    class="portfolio__single-section__image img-responsive"
+                    src="assets/images/portfolio-3.png"
+                    alt=""
+                  />
+                  <div class="portfolio__single-section__overlay">
+                    <div class="overlay-content">
+                      <h4>SOCIAL MEDIA BUTTONS</h4>
+                      <p>Diseño Web</p>
+                    </div>
+                    <div class="portfolio__single-section__search-icon">
+                      <a href="https://codepen.io/Natalio-R/pen/WNeZgNV"
+                        ><img src="assets/images/search-icon.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gutters-40">
+              <div class="col-md-4">
+                <div
+                  class="portfolio__single-section mix category-b category-d"
+                  data-order="4"
+                >
+                  <img
+                    class="portfolio__single-section__image img-responsive"
+                    src="assets/images/portfolio-4.png"
+                    alt=""
+                  />
+                  <div class="portfolio__single-section__overlay">
+                    <div class="overlay-content">
+                      <h4>APP UI DESIGN-PRODUCT CARD</h4>
+                      <p>Diseño UI</p>
+                    </div>
+                    <div class="portfolio__single-section__search-icon">
+                      <a href="https://codepen.io/Natalio-R/pen/YzXJvvp"
+                        ><img src="assets/images/search-icon.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="portfolio__single-section mix category-b category-d"
+                  data-order="5"
+                >
+                  <img
+                    class="portfolio__single-section__image img-responsive"
+                    src="assets/images/portfolio-5.png"
+                    alt=""
+                  />
+                  <div class="portfolio__single-section__overlay">
+                    <div class="overlay-content">
+                      <h4>ANIMATED LOGIN</h4>
+                      <p>Diseño WEB</p>
+                    </div>
+                    <div class="portfolio__single-section__search-icon">
+                      <a href="https://codepen.io/Natalio-R/pen/KKPgYLp"
+                        ><img src="assets/images/search-icon.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="portfolio__single-section mix category-d"
+                  data-order="6"
+                >
+                  <img
+                    class="portfolio__single-section__image img-responsive"
+                    src="assets/images/portfolio-6.png"
+                    alt=""
+                  />
+                  <div class="portfolio__single-section__overlay">
+                    <div class="overlay-content">
+                      <h4>CIRCLE RGB ANIMATED</h4>
+                      <p>Diseño WEB</p>
+                    </div>
+                    <div class="portfolio__single-section__search-icon">
+                      <a
+                        href="https://codepen.io/Natalio-R/details/RvLELM"
+                        target="_blank"
+                        onclick="location.href='https://codepen.io/Natalio-R/details/RvLELM'"
+                        ><img src="assets/images/search-icon.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer footer--bg" id="contacto">
+        <div class="container text-center">
+          <h1 class="footer__title">EXTRAS</h1>
+          <ul class="footer__contact-information">
+            <li>
+              <a href="tel:634775093"
+                ><i class="material-icons">phone</i> España (+34) 634 775 093
+              </a>
+            </li>
+            <li>
+              <a href="mailto:nataliorabasconavarro@gmail.com"
+                ><i class="material-icons">email</i>
+                nataliorabasconavarro@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="material-icons">location_on</i> Almoradi, Alicante</a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr
+          style="
+            border: 0;
+            border-top: 1px solid #525b60;
+            display: block;
+            margin-top: 40px;
+          "
+        />
+        <div class="container text-center">
+          <div class="social-icon">
+            <ul>
+              <li>
+                <a href="https://twitter.com/NatalioRabasco"
+                  ><i class="flaticon-twitter-logo"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer__paragraph">
+            Copyright&copy; 2020 | Todos los derechos reservados.
+          </p>
+        </div>
+      </footer>
     </div>
-    <div class="toggleClass" onclick="toggleClass()"></div>
+    <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/mixitup.js"></script>
+
     <script>
-        function toggleClass(){
-            const body = document.querySelector('body');
-            body.classList.toggle('light');
-        }
+      $("a").click(function (e) {
+        e.preventDefault();
+      });
 
-        const deg = 6;
-        const hh = document.querySelector("#hr");
-        const mm = document.querySelector("#mn");
-        const ss = document.querySelector("#sc");
-
-        setInterval(() => {
-            let day = new Date();
-            let hh = day.getHours() * 30;
-            let mm = day.getMinutes() * deg;
-            let ss = day.getSeconds() * deg;
-
-            hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
-            mn.style.transform = `rotateZ(${(mm)}deg)`;
-            sc.style.transform = `rotateZ(${(ss)}deg)`;
-        })
+      // calling mixitup
+      var mixer = mixitup(".portfolio");
     </script>
-</body>
+  </body>
 </html>
