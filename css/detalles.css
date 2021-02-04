@@ -1,0 +1,471 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* /Google Fonts */
+@import url("font.css");
+
+/* Config. General */
+:root {
+  --Black: #000;
+  --White: #fff;
+  --Green: #8a8f98;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: "Graphik";
+  background: #050505;
+  color: var(--White);
+  overflow-x: hidden;
+  background-image: url("../images/ocean.jpg");
+  padding: 4rem;
+}
+/* Config. General */
+button {
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(220, 1, 218, 1) 0%,
+    rgba(85, 0, 235, 1) 100%
+  );
+  border: none;
+  border-radius: 20px;
+  font-family: "Graphik";
+  color: var(--White);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button i {
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgb(0 0 0/100%);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0rem 1rem;
+}
+
+.container .header {
+  width: 100%;
+  text-align: center;
+}
+
+.container .header h1 {
+  font-size: 96px;
+  line-height: 150px;
+  background-image: linear-gradient(
+    to right,
+    rgba(220, 1, 218, 1) 0%,
+    rgba(85, 0, 235, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .header p {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.container .header span {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.479);
+  font-weight: 400;
+}
+
+.container .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 3rem;
+}
+
+.container .grid .col {
+  background-color: var(--White);
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.container .grid .col:first-child {
+  margin-left: 0px;
+}
+
+.container .grid .col h2 {
+  font-size: 20px;
+  color: #383838;
+  padding: 0.5rem 0rem 0rem 1rem;
+}
+
+.container .grid .col .img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .grid .col .img .esp {
+  filter: invert(1);
+}
+
+.container .grid .col .img img {
+  width: 80%;
+  padding: 0.5rem 0rem;
+}
+
+.container .faq {
+  width: 100%;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.container .faq h1 {
+  font-size: 96px;
+  line-height: 150px;
+  background-image: linear-gradient(
+    to right,
+    rgba(220, 1, 218, 1) 0%,
+    rgba(85, 0, 235, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container .faq p {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.container .faq span {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.479);
+  font-weight: 400;
+}
+
+main {
+  max-width: 100%;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.categoria {
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--White);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--Black);
+  transition: 0.3s ease all;
+}
+
+.categoria:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(220, 1, 218, 1) 0%,
+    rgba(85, 0, 235, 1) 100%
+  );
+  color: var(--White);
+}
+
+.categoria:hover path {
+  fill: var(--White);
+}
+
+.categoria svg {
+  width: 64px;
+  margin-bottom: 10px;
+}
+
+.categoria path {
+  fill: var(--Black);
+  transition: 0.3s ease all;
+}
+
+.categoria.activa {
+  color: var(--White);
+  background-image: linear-gradient(
+    to right,
+    rgba(220, 1, 218, 1) 0%,
+    rgba(85, 0, 235, 1) 100%
+  );
+}
+
+.categoria.activa path {
+  fill: var(--White);
+}
+
+.contenedor-preguntas {
+  display: none;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.contenedor-preguntas.activo {
+  display: grid;
+}
+
+.contenedor-pregunta {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.contenedor-pregunta:hover {
+  box-shadow: 0px 0px 20px rgb(0 0 0/100%);
+}
+
+.contenedor-pregunta.activa {
+  border: 2px solid var(--Black);
+  box-shadow: 0px 0px 20px rgb(0 0 0/100%);
+}
+
+.pregunta {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--Black);
+}
+
+.pregunta i {
+  width: 14px;
+  color: #000;
+  transition: 0.3s;
+}
+
+.respuesta {
+  color: #383838;
+  line-height: 30px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s ease all;
+}
+
+.respuesta a {
+  text-decoration: none;
+  color: var(--Black);
+  font-weight: 600;
+}
+
+.contenedor-pregunta.activa .respuesta {
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.contenedor-pregunta.activa i {
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 1500px) {
+  body {
+    padding: 1rem;
+  }
+  button {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+  .container {
+    padding: 2rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    width: 51rem;
+  }
+  .container .grid .col {
+    width: 500px;
+    height: 500px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .container .grid .top {
+    margin-top: 0px;
+  }
+  .container .grid .down-left {
+    margin-left: 0px;
+  }
+  .container .grid .col .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .container .grid .col .img img {
+    width: 400px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container .header h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  .container .header p {
+    font-size: 20px;
+  }
+  .container .header span {
+    font-size: 14px;
+  }
+  .container .faq h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .container .faq p {
+    font-size: 20px;
+  }
+  .container .faq span {
+    font-size: 14px;
+  }
+  .container .grid {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container .grid .col {
+    margin-top: 20px;
+  }
+  .container .grid .col:first-child {
+    margin-top: 0px;
+  }
+  .container .grid .col .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .container .grid .col .img img {
+    width: 400px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .categorias {
+    grid-template-columns: 1fr 1fr;
+  }
+  .categoria {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  .categoria svg {
+    width: 30px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 780px) {
+  .container .header h1 {
+    margin-top: 3rem;
+  }
+  .container .header {
+    width: 95%;
+  }
+  .container .faq {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .grid .col {
+    width: 340px;
+    height: 400px;
+  }
+  .container .grid .col .img img {
+    width: 300px;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .categorias {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container .header h1 {
+    font-size: 40px;
+  }
+  .container .header p {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .container .header span {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .container .grid .col {
+    width: 250px;
+    height: 300px;
+  }
+  .container .grid .col .img img {
+    width: 220px;
+    height: 90px;
+  }
+  .container .faq h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .container .faq p {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 1rem;
+  }
+  .container .faq span {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
