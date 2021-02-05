@@ -593,7 +593,7 @@ footer .copy button i {
   }
 
   section .infor {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -701,6 +701,9 @@ footer .copy button i {
     font-size: 60px;
     margin-bottom: 2rem;
   }
+  section .infor p {
+    width: 140%;
+  }
   footer h1 {
     font-size: 60px;
   }
@@ -724,6 +727,9 @@ footer .copy button i {
     width: 100%;
     text-align: left;
     font-weight: 700;
+  }
+  section .infor p {
+    width: 160%;
   }
   footer nav ul {
     display: flex;
@@ -771,11 +777,15 @@ footer .copy button i {
     width: 100px;
   }
   section .infor h1 {
+    width: 160%;
     font-size: 40px;
     line-height: 40px;
   }
   article .logo h1 {
     font-size: 40px;
+  }
+  section .infor p {
+    width: 190%;
   }
   article p {
     font-size: 20px;
@@ -795,5 +805,11 @@ footer .copy button i {
     width: 20px;
     height: 20px;
     font-size: 20px;
+  }
+  section .infor h1 {
+    width: 200%;
+  }
+  section .infor p {
+    width: 200%;
   }
 }
