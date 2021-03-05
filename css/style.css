@@ -109,12 +109,12 @@ header nav ul li a:hover {
 header nav ul li a i {
   display: block;
   fill: none;
-  height: 1.5rem;
+  height: 1.6rem;
   stroke: #fff;
   stroke-width: 1;
   width: 1.4rem;
   margin-left: 1rem;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 header nav ul li a i {
